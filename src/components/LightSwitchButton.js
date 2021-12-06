@@ -1,4 +1,6 @@
-function LightSwitchButton(light, setLight) {
+function LightSwitchButton(props) {
+  const { light, setLight } = props;
+
   const handleClick = () => setLight(light === "on" ? "off" : "on");
 
   return (
